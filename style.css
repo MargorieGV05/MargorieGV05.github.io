@@ -1,8 +1,8 @@
 body {
-    background: rgb(122, 159, 193);
-    color: rgb(45, 45, 45);
+    background: rgb(154, 80, 80);
+    color: rgb(0, 0, 0);
     padding: 10px;
-    font-family: arial;
+    font-family:cursive;
 }
 #all-contents {
   max-width: 800px;
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(181, 119, 104);
+    background: rgb(220, 106, 159);
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
@@ -19,7 +19,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     flex: 1;
     margin: 0;
 }
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(169, 125, 165);
+    background: rgb(199, 144, 176);
     display: flex;
 }
 .sidebar {
@@ -90,7 +90,7 @@ h2, h3 {
     }
 
     .sidebar {
-      margin-right: 0px;
+      margin-right: 10px;
       justify-content: center;
       align-items: center;
     }
@@ -138,7 +138,7 @@ h2, h3 {
 
 /* responsive web design */
 @media screen and (min-width: 120px) and (max-width: 1080px) {
-  main {
+  main{
     height: 100ch;
     zoom: 1.5;
     display: grid;
