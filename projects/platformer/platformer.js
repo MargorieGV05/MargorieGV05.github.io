@@ -20,6 +20,7 @@ $(function () {
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
+0
 
     /**
      * Uncomment the drawGrid() function call below to add a "grid" to your platformer game's screen
@@ -33,9 +34,23 @@ $(function () {
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
-
+createCollectable("steve", 200, 170, 6, 0.7);
     // TODO 1
     // Create platforms
+    createPlatform(100, 720, 100, 20); 
+    createPlatform(350, 670, 80, 90);
+    createPlatform(520, 550, 100, 30);
+    createPlatform(680, 430, 50, 40);
+    createPlatform(780, 330, 50, 40);
+    createPlatform(880, 430, 50, 40);
+    createPlatform(1120, 320, 150, 90); 
+    createPlatform(1250, 190, 150, 60); 
+    createPlatform(990, 120, 190, 40);
+    createPlatform(500, 250, 180, 90);
+    createPlatform(100,200,200,90);
+    createPlatform(730,190,190,30);
+   createPlatform(400, 200,50,30);
+
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
@@ -44,15 +59,20 @@ $(function () {
     
     // TODO 2
     // Create collectables
-    // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
-    // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
-    // example usage: createCollectable(type, x, y, gravity, bounce)
-
+    createCollectable("steve", 600, 400, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 40% bounce
+    createCollectable("grace", 300, 100); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("diamond", 1000, 100);// You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
+    createCollectable("kennedi", 1200, 100);//// Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
+    createCollectable("database", 500, 200, 20, 0.5);// example usage: createCollectable(type, x, y, gravity, bounce)
+    createCollectable("max", 500, 1000);
 
 
     
     // TODO 3
     // Create cannons
+    createCannon("left", 450, 1000, 20, 50); 
+    createCannon("bottom", 990, 1000, 50, 20);
+    createCannon("top", 850, 1000, 50, 20);
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
@@ -66,4 +86,4 @@ $(function () {
   }
 
   registerSetup(setup);
-});
+})
